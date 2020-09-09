@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-    <title>Cj_Singh</title>
+    <title>Chiranjiv Singh</title>
     <meta name="description" content="">  
     <meta name="author" content="">
 
@@ -29,6 +29,21 @@
    <!-- favicons
     ================================================== -->
     <link rel="icon" type="image/png" href="cj.png">
+
+
+<script>
+    window.oncontextmenu = function () {
+                return false;
+            }
+            $(document).keydown(function (event) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                    return false;
+                }
+            });
+        </script>
 
 </head>
 
@@ -994,14 +1009,16 @@
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
 
-
+<!--
 <script type="text/javascript">
-    
+
 document.addEventListener("contextmenu",function(cjsingh){
     cjsingh.preventDefault();
     });
 
+
 </script>
+-->
 </body>
 
 </html>
